@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan Javed | Digital Creator & Developer</title>
+    <meta name="description"
+        content="Official portfolio of Azan Javed - Graphic Designer, Web Developer, and App Developer. Clean, premium digital experiences.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D62828',
+                        brandRedDark: '#B91C1C',
+                        brandRedLight: '#FFF5F5',
+                        brandDark: '#171717',
+                        brandGray: '#666666',
+                        brandBorder: '#EAEAEA',
+                        brandBg: '#FFFFFF',
+                        brandBgAlt: '#F8F8F8',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS Styles -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFFFF;
+            color: #171717;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .clean-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid #EAEAEA;
+        }
+
+        .clean-card {
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            min-width: 0;
+            word-break: break-word;
+        }
+
+        .clean-card:hover {
+            border-color: #D62828;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(214, 40, 40, 0.08);
+        }
+
+        .text-red-accent {
+            color: #D62828;
+        }
+
+        .bg-red-accent {
+            background-color: #D62828;
+        }
+
+        .btn-primary {
+            background-color: #D62828;
+            color: #FFFFFF;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #B91C1C;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(214, 40, 40, 0.25);
+        }
+
+        .btn-secondary {
+            background-color: #FFFFFF;
+            color: #171717;
+            border: 1px solid #171717;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #171717;
+            color: #FFFFFF;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FFFFFF;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D62828;
+        }
+
+        /* Fade In Animation */
+        .fade-in-up {
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="selection:bg-brandRed selection:text-white bg-white text-brandDark">
+
+    <header class="fixed top-0 left-0 right-0 z-50 clean-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl lg:max-w-[88rem] mx-auto px-4 sm:px-6 lg:px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-3 group min-w-0">
+                <div
+                    class="w-10 h-10 rounded-lg bg-brandRed flex-shrink-0 flex items-center justify-center font-display font-bold text-lg text-white group-hover:bg-brandRedDark transition-colors">
+                    AJ
+                </div>
+                <div class="min-w-0">
+                    <span
+                        class="font-display font-bold text-base sm:text-lg tracking-tight text-brandDark block leading-none truncate">AJ
+                        Digital Studio</span>
+                    <span class="text-xs text-brandGray font-medium block truncate pt-1">Azan Javed</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home"
+                    class="text-sm font-semibold text-brandDark hover:text-brandRed transition-colors">Home</a>
+                <a href="#about"
+                    class="text-sm font-semibold text-brandGray hover:text-brandRed transition-colors">About</a>
+                <a href="#services"
+                    class="text-sm font-semibold text-brandGray hover:text-brandRed transition-colors">Services</a>
+                <a href="#projects"
+                    class="text-sm font-semibold text-brandGray hover:text-brandRed transition-colors">Projects</a>
+                <a href="#graphics"
+                    class="text-sm font-semibold text-brandGray hover:text-brandRed transition-colors">Graphics</a>
+                <a href="#contact"
+                    class="text-sm font-semibold text-brandGray hover:text-brandRed transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#contact"
+                    class="px-5 py-2.5 rounded-lg btn-primary text-sm font-bold flex items-center space-x-2">
+                    <span>Let's Talk</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-brandDark hover:text-brandRed focus:outline-none p-2"
+                aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-white border-b border-brandBorder px-6 py-6 space-y-4 shadow-xl">
+            <a href="#home"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">Home</a>
+            <a href="#about"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">About</a>
+            <a href="#services"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">Services</a>
+            <a href="#projects"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">Projects</a>
+            <a href="#graphics"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">Graphics</a>
+            <a href="#contact"
+                class="block text-base font-semibold text-brandDark hover:text-brandRed mobile-link">Contact</a>
+            <div class="pt-2">
+                <a href="#contact"
+                    class="w-full text-center py-3 rounded-lg btn-primary text-sm font-bold block mobile-link">Let's
+                    Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <section id="home" class="relative min-h-screen flex items-center pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-6 bg-white">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-5 sm:space-y-8 fade-in-up order-2 lg:order-1 min-w-0">
+                    <div
+                        class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brandRedLight border border-brandRed/20 text-brandRed text-xs font-bold tracking-wider uppercase max-w-full">
+                        <span class="w-2 h-2 rounded-full bg-brandRed animate-ping flex-shrink-0"></span>
+                        <span class="truncate">DESIGN. DEVELOP. CREATE.</span>
+                    </div>
+
+                    <div class="space-y-3 sm:space-y-4 min-w-0">
+                        <h1
+                            class="text-3xl sm:text-5xl lg:text-7xl font-display font-bold tracking-tight text-brandDark leading-tight break-words">
+                            Hello, I'm <span class="text-brandRed">Azan Javed</span>.
+                        </h1>
+                        <p class="text-lg sm:text-2xl font-display font-semibold text-brandGray break-words">
+                            Graphic Designer & Digital Developer
+                        </p>
+                    </div>
+
+                    <p class="text-sm sm:text-lg text-brandGray max-w-2xl leading-relaxed break-words">
+                        I create meaningful visual identities, modern websites, and mobile applications that turn ideas
+                        into digital experiences.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-1 sm:pt-2">
+                        <a href="#projects"
+                            class="px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg btn-primary font-bold text-sm sm:text-base flex items-center justify-center space-x-3 text-center">
+                            <span>Explore My Work</span>
+                            <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
+                        <a href="#contact"
+                            class="px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg btn-secondary font-bold text-sm sm:text-base text-center">
+                            Let's Work Together
+                        </a>
+                    </div>
+
+                    <!-- Verified Experience Numbers (3-Column Horizontal Row on All Screens) -->
+                    <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-6 sm:pt-8 border-t border-brandBorder max-w-lg">
+                        <div class="min-w-0 text-center sm:text-left">
+                            <span class="block text-lg sm:text-3xl font-display font-bold text-brandDark truncate">3+
+                                Years</span>
+                            <span class="text-[10px] sm:text-sm text-brandGray font-medium truncate block pt-0.5">Graphic
+                                Design</span>
+                        </div>
+                        <div class="min-w-0 text-center sm:text-left">
+                            <span class="block text-lg sm:text-3xl font-display font-bold text-brandDark truncate">2+
+                                Years</span>
+                            <span class="text-[10px] sm:text-sm text-brandGray font-medium truncate block pt-0.5">Web Dev</span>
+                        </div>
+                        <div class="min-w-0 text-center sm:text-left">
+                            <span class="block text-lg sm:text-3xl font-display font-bold text-brandDark truncate">1+
+                                Years</span>
+                            <span class="text-[10px] sm:text-sm text-brandGray font-medium truncate block pt-0.5">App Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column: Integrated Personal Photograph Frame -->
+                <div class="lg:col-span-5 relative flex justify-center order-1 lg:order-2 w-full min-w-0 fade-in-up">
+                    <div class="relative w-full max-w-[260px] sm:max-w-sm lg:max-w-md group">
+                        <!-- Decorative Red Glow & Ring Borders -->
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-brandRed/30 to-brandRed/10 rounded-3xl blur-xl opacity-50 group-hover:opacity-100 transition duration-700">
+                        </div>
+
+                        <div
+                            class="relative bg-white border border-brandBorder p-3 sm:p-5 rounded-3xl shadow-xl transition-transform duration-500 hover:-translate-y-2">
+                            <!-- Image Frame -->
+                            <div
+                                class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-brandBgAlt border border-brandBorder">
+                                <img id="heroProfileImage" src="assets/profile/azan-javed-portrait.png"
+                                    alt="Azan Javed - Digital Creator & Developer"
+                                    class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/800x1000/171717/FFFFFF?text=Azan+Javed';">
+
+                                <!-- Floating Status Badge -->
+                                <div
+                                    class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-2 sm:p-3 bg-white/90 backdrop-blur-md rounded-xl border border-brandBorder shadow-lg flex items-center justify-between">
+                                    <div class="flex items-center space-x-2 min-w-0">
+                                        <span class="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3 flex-shrink-0">
+                                            <span
+                                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                            <span
+                                                class="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-emerald-500"></span>
+                                        </span>
+                                        <span class="text-[10px] sm:text-xs font-bold text-brandDark truncate">Available for
+                                            Projects</span>
+                                    </div>
+                                    <span
+                                        class="text-[9px] sm:text-[10px] font-mono text-brandRed font-bold uppercase tracking-wider flex-shrink-0 pl-1">PAKISTAN</span>
+                                </div>
+                            </div>
+
+                            <!-- Name Tag -->
+                            <div class="pt-3 sm:pt-4 px-1 sm:px-2 flex items-center justify-between min-w-0">
+                                <div class="min-w-0 pr-2">
+                                    <h3 class="font-display font-bold text-brandDark text-sm sm:text-lg truncate">Azan
+                                        Javed</h3>
+                                    <p class="text-[10px] sm:text-xs text-brandGray font-medium truncate">Founder & Lead Developer</p>
+                                </div>
+                                <div
+                                    class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-brandRedLight text-brandRed flex-shrink-0 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-check text-[10px] sm:text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-brandBgAlt border-y border-brandBorder">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto space-y-12 sm:space-y-16">
+                <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">About Me</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark">A Little About Me</h2>
+                    <div class="w-12 h-1 bg-brandRed mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    <!-- About Portrait Column -->
+                    <div class="lg:col-span-5 flex justify-center min-w-0">
+                        <div class="relative w-full max-w-[240px] sm:max-w-sm">
+                            <div
+                                class="aspect-square rounded-2xl overflow-hidden bg-white border border-brandBorder shadow-md relative group">
+                                <img id="aboutProfileImage" src="assets/profile/azan-javed-portrait.png"
+                                    alt="Azan Javed - About Portrait"
+                                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/800x800/171717/FFFFFF?text=Azan+Javed';">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-4 left-4 right-4 text-white">
+                                    <span
+                                        class="text-xs font-mono text-brandRed font-bold uppercase tracking-wider block">Identity</span>
+                                    <h4 class="font-display font-bold text-base">Azan Javed</h4>
+                                    <p class="text-xs opacity-80">17-Year-Old Digital Creator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Content -->
+                    <div class="lg:col-span-7 space-y-5 sm:space-y-6 min-w-0">
+                        <p class="text-brandGray text-sm sm:text-lg leading-relaxed break-words">
+                            I'm <strong class="text-brandDark">Azan Javed</strong>, a 17-year-old creative developer and
+                            graphic designer with a passion for clean visual identities and pragmatic software
+                            solutions. I blend typography, structural code, and responsive design to build user-centered
+                            products.
+                        </p>
+                        <p class="text-brandGray text-sm sm:text-base leading-relaxed break-words">
+                            Whether designing promotional social assets or engineering full-stack websites and mobile
+                            solutions, my mission is to deliver clean, scalable, and visually compelling digital
+                            products.
+                        </p>
+
+                        <!-- Outline Information Cards (Horizontal Grid on Mobile) -->
+                        <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-2 sm:pt-4">
+                            <div class="bg-white p-3 sm:p-5 rounded-xl border border-brandBorder min-w-0 text-center sm:text-left">
+                                <div
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brandRedLight text-brandRed flex items-center justify-center text-sm sm:text-lg mb-2 sm:mb-3 mx-auto sm:mx-0">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <h3 class="text-xs sm:text-base font-display font-bold text-brandDark truncate">Design</h3>
+                                <span class="text-[10px] sm:text-xs text-brandRed font-mono font-bold block pt-0.5 sm:pt-1 truncate">3+ Years</span>
+                            </div>
+
+                            <div class="bg-white p-3 sm:p-5 rounded-xl border border-brandBorder min-w-0 text-center sm:text-left">
+                                <div
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brandRedLight text-brandRed flex items-center justify-center text-sm sm:text-lg mb-2 sm:mb-3 mx-auto sm:mx-0">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h3 class="text-xs sm:text-base font-display font-bold text-brandDark truncate">Web Dev</h3>
+                                <span class="text-[10px] sm:text-xs text-brandRed font-mono font-bold block pt-0.5 sm:pt-1 truncate">2+ Years</span>
+                            </div>
+
+                            <div class="bg-white p-3 sm:p-5 rounded-xl border border-brandBorder min-w-0 text-center sm:text-left">
+                                <div
+                                    class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brandRedLight text-brandRed flex items-center justify-center text-sm sm:text-lg mb-2 sm:mb-3 mx-auto sm:mx-0">
+                                    <i class="fa-solid fa-mobile-button"></i>
+                                </div>
+                                <h3 class="text-xs sm:text-base font-display font-bold text-brandDark truncate">App Dev</h3>
+                                <span class="text-[10px] sm:text-xs text-brandRed font-mono font-bold block pt-0.5 sm:pt-1 truncate">1+ Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-white">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto space-y-12 sm:space-y-16">
+                <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">What I
+                        Offer</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark">Services & Solutions</h2>
+                    <p class="text-brandGray text-sm sm:text-lg">Specialized creative services tailored for individual
+                        brands, startups, and enterprises.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <!-- Service 1 -->
+                    <div class="clean-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group min-w-0">
+                        <div class="space-y-5 sm:space-y-6 min-w-0">
+                            <div
+                                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-brandRedLight text-brandRed flex items-center justify-center text-xl sm:text-2xl">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-display font-bold text-brandDark break-words">Graphic
+                                Designing</h3>
+                            <p class="text-brandGray text-sm leading-relaxed break-words">Clean, striking visuals
+                                engineered to
+                                communicate value and strengthen brand presence.</p>
+                            <ul class="space-y-3 pt-4 border-t border-brandBorder text-sm text-brandDark min-w-0">
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Social Media Banners &
+                                        Posts</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Carousel
+                                        Graphics</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Promotional
+                                        Creatives</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Marketing
+                                        Materials</span></li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-brandBorder">
+                            <a href="#contact" onclick="selectService('Graphic Designing')"
+                                class="w-full py-3 px-4 rounded-lg border border-brandDark text-brandDark font-bold text-sm flex items-center justify-center space-x-2 hover:bg-brandRed hover:border-brandRed hover:text-white transition-all text-center">
+                                <span>Inquire Design Service</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="clean-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group min-w-0">
+                        <div class="space-y-5 sm:space-y-6 min-w-0">
+                            <div
+                                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-brandRedLight text-brandRed flex items-center justify-center text-xl sm:text-2xl">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-display font-bold text-brandDark break-words">Web
+                                Development</h3>
+                            <p class="text-brandGray text-sm leading-relaxed break-words">High-performance responsive
+                                websites
+                                tailored for usability, speed, and modern web standards.</p>
+                            <ul class="space-y-3 pt-4 border-t border-brandBorder text-sm text-brandDark min-w-0">
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Corporate
+                                        Websites</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">E-Commerce
+                                        Frontends</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Custom
+                                        Portfolios</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Responsive Web
+                                        Apps</span></li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-brandBorder">
+                            <a href="#contact" onclick="selectService('Web Development')"
+                                class="w-full py-3 px-4 rounded-lg border border-brandDark text-brandDark font-bold text-sm flex items-center justify-center space-x-2 hover:bg-brandRed hover:border-brandRed hover:text-white transition-all text-center">
+                                <span>Inquire Web Service</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="clean-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group min-w-0">
+                        <div class="space-y-5 sm:space-y-6 min-w-0">
+                            <div
+                                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-brandRedLight text-brandRed flex items-center justify-center text-xl sm:text-2xl">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-display font-bold text-brandDark break-words">App
+                                Development</h3>
+                            <p class="text-brandGray text-sm leading-relaxed break-words">Mobile applications engineered
+                                with
+                                intuitive user flows, state management, and functional tools.</p>
+                            <ul class="space-y-3 pt-4 border-t border-brandBorder text-sm text-brandDark min-w-0">
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Flutter Cross-Platform
+                                        Apps</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Android
+                                        Applications</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Firebase
+                                        Integration</span></li>
+                                <li class="flex items-start space-x-3 min-w-0"><i
+                                        class="fa-solid fa-check text-brandRed text-xs mt-1 flex-shrink-0"></i><span
+                                        class="break-words">Mobile UI
+                                        Prototyping</span></li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-brandBorder">
+                            <a href="#contact" onclick="selectService('App Development')"
+                                class="w-full py-3 px-4 rounded-lg border border-brandDark text-brandDark font-bold text-sm flex items-center justify-center space-x-2 hover:bg-brandRed hover:border-brandRed hover:text-white transition-all text-center">
+                                <span>Inquire App Service</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-brandBgAlt border-y border-brandBorder">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto space-y-12 sm:space-y-16">
+                <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">Selected
+                        Work</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark">Website Projects</h2>
+                    <p class="text-brandGray text-sm sm:text-lg">Click any project to explore its gallery of actual
+                        responsive screenshots.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" id="webProjectsGrid">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="apps" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-white border-b border-brandBorder">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto space-y-12 sm:space-y-16">
+                <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">Mobile
+                        Applications</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark">Featured Apps</h2>
+                    <p class="text-brandGray text-sm sm:text-lg">Mobile applications built with Flutter and modern UI
+                        standards.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" id="appProjectsGrid">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="graphics" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-brandBgAlt border-b border-brandBorder">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto space-y-10 sm:space-y-12">
+                <div class="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">Visual
+                        Design</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark">Graphic Design Gallery</h2>
+                    <p class="text-brandGray text-sm sm:text-lg">Select visuals and branding graphics created for
+                        digital media.</p>
+                </div>
+
+                <!-- Gallery Category Filters -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                    <button onclick="filterGraphics('all')"
+                        class="graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-bold bg-brandRed text-white transition-all shadow-sm"
+                        data-filter="all">All Designs</button>
+                    <button onclick="filterGraphics('social')"
+                        class="graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white border border-brandBorder text-brandDark hover:border-brandRed transition-all"
+                        data-filter="social">Social Media</button>
+                    <button onclick="filterGraphics('product label')"
+                        class="graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white border border-brandBorder text-brandDark hover:border-brandRed transition-all"
+                        data-filter="product label">Product Labels</button>
+                    <button onclick="filterGraphics('brochure')"
+                        class="graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white border border-brandBorder text-brandDark hover:border-brandRed transition-all"
+                        data-filter="brochure">Brochures</button>
+                </div>
+
+                <!-- Graphic Items Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="graphicsGrid">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-6 bg-white">
+            <div class="max-w-7xl lg:max-w-[88rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                <div class="lg:col-span-5 space-y-6 sm:space-y-8 min-w-0">
+                    <div class="space-y-3 sm:space-y-4 min-w-0">
+                        <span class="text-xs font-bold text-brandRed uppercase tracking-widest font-mono">Get In
+                            Touch</span>
+                        <h2 class="text-3xl sm:text-5xl font-display font-bold text-brandDark break-words">Have an Idea?
+                            Let's Talk.
+                        </h2>
+                        <p class="text-brandGray text-sm sm:text-base leading-relaxed break-words">
+                            Fill in your project details below to start a direct inquiry on WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 sm:space-y-4 pt-1 sm:pt-2 min-w-0">
+                        <a href="mailto:ajmughal2107@gmail.com"
+                            class="flex items-center space-x-3 sm:space-x-4 p-3.5 sm:p-5 rounded-xl border border-brandBorder bg-brandBgAlt hover:border-brandRed transition-all min-w-0">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white border border-brandBorder text-brandRed flex-shrink-0 flex items-center justify-center text-lg sm:text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-brandGray uppercase truncate">Direct
+                                    Email</span>
+                                <span
+                                    class="text-xs sm:text-sm font-bold text-brandDark truncate block">ajmughal2107@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/923701429102" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center space-x-3 sm:space-x-4 p-3.5 sm:p-5 rounded-xl border border-brandBorder bg-brandBgAlt hover:border-brandRed transition-all min-w-0">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white border border-brandBorder text-brandRed flex-shrink-0 flex items-center justify-center text-lg sm:text-xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-brandGray uppercase truncate">WhatsApp
+                                    Contact</span>
+                                <span class="text-xs sm:text-sm font-bold text-brandDark truncate block">+92 370
+                                    1429102</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7 min-w-0">
+                    <div class="bg-white p-5 sm:p-10 rounded-2xl border border-brandBorder shadow-sm space-y-5 sm:space-y-6 min-w-0">
+                        <h3 class="text-xl sm:text-2xl font-display font-bold text-brandDark">Project Inquiry Form</h3>
+
+                        <div id="formAlert" class="hidden p-4 rounded-lg text-sm font-medium"></div>
+
+                        <form id="inquiryForm" onsubmit="handleWhatsAppInquiry(event)" class="space-y-5 sm:space-y-6 min-w-0">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 min-w-0">
+                                <div class="space-y-1.5 sm:space-y-2 min-w-0">
+                                    <label class="block text-xs font-bold text-brandDark uppercase tracking-wider">Full
+                                        Name *</label>
+                                    <input type="text" id="fullName" required placeholder="Enter your full name"
+                                        class="w-full bg-brandBgAlt border border-brandBorder rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-brandDark placeholder-brandGray focus:outline-none focus:border-brandRed transition-colors text-sm">
+                                </div>
+                                <div class="space-y-1.5 sm:space-y-2 min-w-0">
+                                    <label class="block text-xs font-bold text-brandDark uppercase tracking-wider">Email
+                                        Address *</label>
+                                    <input type="email" id="emailAddress" required placeholder="name@example.com"
+                                        class="w-full bg-brandBgAlt border border-brandBorder rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-brandDark placeholder-brandGray focus:outline-none focus:border-brandRed transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 min-w-0">
+                                <div class="space-y-1.5 sm:space-y-2 min-w-0">
+                                    <label
+                                        class="block text-xs font-bold text-brandDark uppercase tracking-wider">WhatsApp
+                                        Number *</label>
+                                    <input type="tel" id="contactNumber" required placeholder="+92 300 1234567"
+                                        class="w-full bg-brandBgAlt border border-brandBorder rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-brandDark placeholder-brandGray focus:outline-none focus:border-brandRed transition-colors text-sm">
+                                </div>
+                                <div class="space-y-1.5 sm:space-y-2 min-w-0">
+                                    <label
+                                        class="block text-xs font-bold text-brandDark uppercase tracking-wider">Required
+                                        Service *</label>
+                                    <select id="serviceRequired" required
+                                        class="w-full bg-brandBgAlt border border-brandBorder rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-brandDark focus:outline-none focus:border-brandRed transition-colors text-sm">
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="Graphic Designing">Graphic Designing</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="App Development">App Development</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="space-y-1.5 sm:space-y-2 min-w-0">
+                                <label class="block text-xs font-bold text-brandDark uppercase tracking-wider">Project
+                                    Details *</label>
+                                <textarea id="projectMessage" required rows="4"
+                                    placeholder="Tell me about your project goals and requirements..."
+                                    class="w-full bg-brandBgAlt border border-brandBorder rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-brandDark placeholder-brandGray focus:outline-none focus:border-brandRed transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-3.5 sm:py-4 rounded-lg btn-primary font-bold text-sm sm:text-base flex items-center justify-center space-x-2 text-center">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Send Inquiry via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-brandBorder bg-brandBgAlt py-10 sm:py-12 px-4 sm:px-6 lg:px-6">
+        <div class="max-w-7xl lg:max-w-[88rem] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-2 space-y-3 min-w-0">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-brandRed flex-shrink-0 flex items-center justify-center font-display font-bold text-sm text-white">
+                        AJ
+                    </div>
+                    <span class="font-display font-bold text-lg text-brandDark truncate">AJ Digital Studio</span>
+                </div>
+                <p class="text-brandGray text-sm max-w-sm break-words">
+                    Azan Javed — Graphic Designer, Web Developer, and App Developer.
+                </p>
+            </div>
+
+            <div class="space-y-3 min-w-0">
+                <h4 class="font-bold text-sm text-brandDark uppercase tracking-wider">Navigation</h4>
+                <ul class="space-y-2 text-sm text-brandGray">
+                    <li><a href="#home" class="hover:text-brandRed transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-brandRed transition-colors">About</a></li>
+                    <li><a href="#services" class="hover:text-brandRed transition-colors">Services</a></li>
+                    <li><a href="#projects" class="hover:text-brandRed transition-colors">Projects</a></li>
+                    <li><a href="#graphics" class="hover:text-brandRed transition-colors">Graphics</a></li>
+                    <li><a href="#contact" class="hover:text-brandRed transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3 min-w-0">
+                <h4 class="font-bold text-sm text-brandDark uppercase tracking-wider">Direct Contact</h4>
+                <p class="text-sm text-brandGray break-words">Email: ajmughal2107@gmail.com</p>
+                <p class="text-sm text-brandGray break-words">WhatsApp: +92 370 1429102</p>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl lg:max-w-[88rem] mx-auto pt-6 border-t border-brandBorder flex flex-col sm:flex-row items-center justify-between text-xs text-brandGray gap-2 text-center sm:text-left">
+            <p>&copy; <span id="currentYear"></span> AJ Digital Studio. All Rights Reserved.</p>
+            <p>Designed & Developed by Azan Javed</p>
+        </div>
+    </footer>
+
+    <div id="multiGalleryModal"
+        class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2 sm:p-4">
+        <div
+            class="bg-white rounded-2xl max-w-5xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl relative min-w-0">
+            <div
+                class="px-4 sm:px-6 py-4 border-b border-brandBorder flex items-center justify-between bg-white z-10 min-w-0">
+                <div class="min-w-0 pr-2">
+                    <h3 id="galleryTitle" class="text-base sm:text-lg font-display font-bold text-brandDark truncate">
+                        Project Gallery</h3>
+                    <p id="gallerySubtitle" class="text-xs text-brandGray truncate"></p>
+                </div>
+                <button onclick="closeMultiGallery()"
+                    class="w-10 h-10 rounded-full bg-brandBgAlt hover:bg-brandRed hover:text-white text-brandDark flex-shrink-0 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div
+                class="relative flex-1 bg-brandDark flex items-center justify-center min-h-[300px] sm:min-h-[480px] p-2 sm:p-4 overflow-hidden">
+                <img id="mainGalleryImage" src="" alt="Project Screenshot"
+                    class="max-h-[55vh] sm:max-h-[60vh] max-w-full object-contain transition-opacity duration-200">
+
+                <button onclick="prevGalleryImage()"
+                    class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center shadow-lg transition-all z-20">
+                    <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
+                </button>
+                <button onclick="nextGalleryImage()"
+                    class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/80 hover:bg-white text-brandDark flex items-center justify-center shadow-lg transition-all z-20">
+                    <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
+                </button>
+
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-black/70 text-white text-xs font-mono font-bold"
+                    id="galleryCounter">
+                    1 / 1
+                </div>
+            </div>
+
+            <div class="p-3 sm:p-4 bg-brandBgAlt border-t border-brandBorder flex items-center space-x-3 overflow-x-auto"
+                id="galleryThumbnails"></div>
+        </div>
+    </div>
+
+    <div id="graphicLightbox"
+        class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full flex flex-col items-center min-w-0">
+            <button onclick="closeGraphicLightbox()"
+                class="absolute -top-10 sm:-top-12 right-0 text-white text-2xl hover:text-brandRed transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="graphicLightboxImg" src="" alt="Design Preview"
+                class="max-w-full max-h-[75vh] sm:max-h-[80vh] object-contain rounded-lg shadow-2xl">
+            <h4 id="graphicLightboxTitle"
+                class="text-white font-display font-bold text-base sm:text-lg mt-4 text-center break-words max-w-full">
+            </h4>
+        </div>
+    </div>
+
+    <script>
+        // -------------------------------------------------------------
+        // Personal Photograph Configuration
+        // Set MY_PORTRAIT_URL to your local asset path
+        // -------------------------------------------------------------
+        const MY_PORTRAIT_URL = "assets/profile/azan-javed-portrait.png";
+
+        function applyPersonalPhoto(srcUrl) {
+            if (!srcUrl) return;
+            const heroImg = document.getElementById('heroProfileImage');
+            const aboutImg = document.getElementById('aboutProfileImage');
+            if (heroImg) heroImg.src = srcUrl;
+            if (aboutImg) aboutImg.src = srcUrl;
+        }
+
+        // Set year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Projects Data
+        const websiteProjects = [
+            {
+                id: 'web-1',
+                name: "Website Project 01 | Aj Electronics",
+                category: "E-Commerce & Electronics Website",
+                description: "AJ’s Electronics is a modern e-commerce website designed to showcase and sell electronic accessories and gadgets. It features product listings, pricing, and a clean shopping experience with a premium, user-friendly design.",
+                cover: "assets/web/aj-electronics-1.png",
+                images: [
+                    "assets/web/aj-electronics-1.png",
+                    "assets/web/aj-electronics-2.png",
+                    "assets/web/aj-electronics-3.png"
+                ]
+            },
+            {
+                id: 'web-2',
+                name: "Website Project 02 | Aj's Zoo",
+                category: "Wildlife, Tourism & Informational Website",
+                description: "AJ’s Zoo is a wildlife and tourism website designed to explore animals, discover natural habitats, learn about wildlife conservation, and explore zoo facilities. It also features animal categories, staff information, and a ticket booking interface.",
+                cover: "assets/web/aj's-zoo-1.png",
+                images: [
+                    "assets/web/aj's-zoo-1.png",
+                    "assets/web/aj's-zoo-2.png",
+                    "assets/web/aj's-zoo-3.png"
+                ]
+            },
+            {
+                id: 'web-3',
+                name: "Website Project 03 | Pakistan Encyclopedia",
+                category: "Pakistan Digital Encyclopedia 🇵🇰",
+                description: "Pakistan Digital Encyclopedia is an educational and historical website that explores Pakistan’s rich history, ancient civilizations, and Pakistan Movement. It includes an interactive timeline, historical information, and a fact-checking section to help users learn about Pakistan’s heritage.",
+                cover: "assets/web/pakistan-encyclopedia-1.png",
+                images: [
+                    "assets/web/pakistan-encyclopedia-1.png",
+                    "assets/web/pakistan-encyclopedia-2.png",
+                    "assets/web/pakistan-encyclopedia-3.png"
+                ]
+            },
+            {
+                id: 'web-4',
+                name: "Website Project 04 | Suraiya International",
+                category: "Fashion & Clothing E-Commerce Website",
+                description: "Suraiya International is a stylish fashion e-commerce website designed to showcase clothing collections through an elegant and user-friendly interface. It focuses on premium presentation, product browsing, and a smooth online shopping experience.",
+                cover: "assets/web/suraiya-international-1.png",
+                images: [
+                    "assets/web/suraiya-international-1.png",
+                    "assets/web/suraiya-international-2.png",
+                    "assets/web/suraiya-international-3.png"
+                ]
+            }
+        ];
+
+        const appProjects = [
+            {
+                id: 'app-raven',
+                name: "Raven",
+                category: "Grocery Delivery & E-Commerce App",
+                description: "Raven is a grocery shopping and delivery application designed to help users purchase everyday household essentials, including fruits, vegetables, rice, oil, and cleaning products. Customers can browse products, manage their carts, place orders, and track order status, while administrators manage products, orders, and users.",
+                cover: "assets/App/Raven/splash.png",
+                images: [
+                    "assets/App/Raven/sign in.png",
+                    "assets/App/Raven/sign up.png",
+                    "assets/App/Raven/home.png",
+                    "assets/App/Raven/category.png",
+                    "assets/App/Raven/cart.png",
+                ]
+            },
+            {
+                id: 'app-store',
+                name: "AJ's Store",
+                category: "E-Commerce & Online Shopping App",
+                description: "AJ’s Store is an e-commerce application designed to provide a convenient online shopping experience. It includes product browsing, user authentication, product images, and cart and checkout functionality, with Firebase integration for managing application data.",
+                cover: "assets/App/Aj's Store/splash.png",
+                images: [
+                    "assets/App/Aj's Store/sign in.png",
+                    "assets/App/Aj's Store/sign up.png",
+                    "assets/App/Aj's Store/home.png",
+                    "assets/App/Aj's Store/category.png",
+                    "assets/App/Aj's Store/cart.png",
+                ]
+            }
+        ];
+
+        const graphicDesigns = [
+            { title: "Social Media Post 01", category: "social", image: "assets/graphics/Social/social-1.jpg" },
+            { title: "Social Media Post 02", category: "social", image: "assets/graphics/Social/social-2.jpg" },
+            { title: "Social Media Post 03", category: "social", image: "assets/graphics/Social/social-3.jpg" },
+            { title: "Product Label 01", category: "product label", image: "assets/graphics/Product Labels/label-1.jpg" },
+            { title: "Product Label 02", category: "product label", image: "assets/graphics/Product Labels/label-2.jpg" },
+            { title: "Product Label 03", category: "product label", image: "assets/graphics/Product Labels/label-3.jpg" },
+            { title: "Brochure Design 01 | Single Page", category: "brochure", image: "assets/graphics/Brochure/Single/Single-1.jpg" },
+            { title: "Brochure Design 02 | Single Page", category: "brochure", image: "assets/graphics/Brochure/Single/Single-2.jpg" },
+            { title: "Brochure Design 03 | Single Page", category: "brochure", image: "assets/graphics/Brochure/Single/Single-3.jpg" },
+            { title: "Brochure Design 04 | Double Page", category: "brochure", image: "assets/graphics/Brochure/Double/Double-1.jpg" },
+            { title: "Brochure Design 05 | Double Page", category: "brochure", image: "assets/graphics/Brochure/Double/Double-2.jpg" },
+            { title: "Brochure Design 06 | Double Page", category: "brochure", image: "assets/graphics/Brochure/Double/Double-3.jpg" },
+
+        ];
+
+        function renderWebProjects() {
+            const container = document.getElementById('webProjectsGrid');
+            container.innerHTML = websiteProjects.map((proj, idx) => `
+                <div class="clean-card rounded-2xl overflow-hidden flex flex-col justify-between group min-w-0">
+                    <div class="relative bg-brandBgAlt aspect-video overflow-hidden border-b border-brandBorder">
+                        <img src="${proj.cover}" alt="${proj.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white border border-brandBorder text-brandRed text-xs font-mono font-bold truncate max-w-[calc(100%-2rem)]">
+                            ${proj.category}
+                        </span>
+                    </div>
+                    <div class="p-5 sm:p-8 space-y-4 flex-1 flex flex-col justify-between min-w-0">
+                        <div class="space-y-2 min-w-0">
+                            <h3 class="text-lg sm:text-xl font-display font-bold text-brandDark break-words">${proj.name}</h3>
+                            <p class="text-brandGray text-sm leading-relaxed break-words">${proj.description}</p>
+                        </div>
+                        <div class="pt-4 border-t border-brandBorder flex items-center justify-between min-w-0">
+                            <span class="text-xs text-brandGray font-mono truncate pr-2">${proj.images.length} Images Available</span>
+                            <button onclick="openMultiGallery('web', ${idx})" class="text-sm font-bold text-brandRed hover:text-brandRedDark flex items-center space-x-1.5 flex-shrink-0">
+                                <span>View Gallery</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderAppProjects() {
+            const container = document.getElementById('appProjectsGrid');
+            container.innerHTML = appProjects.map((app, idx) => `
+                <div class="clean-card p-5 sm:p-8 rounded-2xl flex flex-col sm:flex-row items-center gap-5 sm:gap-6 group min-w-0">
+                    <div class="w-28 h-44 sm:w-36 sm:h-56 bg-brandBgAlt rounded-xl border border-brandBorder overflow-hidden flex-shrink-0 flex items-center justify-center p-2">
+                        <img src="${app.cover}" alt="${app.name}" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="space-y-3 sm:space-y-4 flex-1 min-w-0 w-full text-center sm:text-left">
+                        <div class="flex justify-center sm:justify-start">
+                            <span class="px-3 py-1 rounded-full bg-brandRedLight text-brandRed text-xs font-mono font-bold truncate max-w-full">${app.category}</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-display font-bold text-brandDark break-words">${app.name}</h3>
+                        <p class="text-brandGray text-sm leading-relaxed break-words">${app.description}</p>
+                        <div class="pt-1 sm:pt-2 flex justify-center sm:justify-start">
+                            <button onclick="openMultiGallery('app', ${idx})" class="px-5 py-2.5 rounded-lg btn-primary text-sm font-bold inline-flex items-center space-x-2 text-center">
+                                <span>App Screenshots (${app.images.length})</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderGraphicsGrid() {
+            const container = document.getElementById('graphicsGrid');
+            container.innerHTML = graphicDesigns.map(item => `
+                <div class="graphic-item clean-card rounded-2xl overflow-hidden group cursor-pointer min-w-0" data-category="${item.category}" onclick="openGraphicLightbox('${item.image}', '${item.title}')">
+                    <div class="aspect-square bg-brandBgAlt overflow-hidden relative">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 sm:p-6">
+                            <div class="min-w-0">
+                                <span class="text-[10px] sm:text-xs text-brandRed font-mono uppercase font-bold truncate block">${item.category}</span>
+                                <h4 class="text-xs sm:text-lg font-bold text-white truncate">${item.title}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        let currentGalleryImages = [];
+        let currentImageIndex = 0;
+
+        function openMultiGallery(type, index) {
+            const data = type === 'web' ? websiteProjects[index] : appProjects[index];
+            currentGalleryImages = data.images;
+            currentImageIndex = 0;
+
+            document.getElementById('galleryTitle').textContent = data.name;
+            document.getElementById('gallerySubtitle').textContent = `${data.category} • ${currentGalleryImages.length} Screenshots`;
+
+            updateGalleryDisplay();
+            document.getElementById('multiGalleryModal').classList.remove('hidden');
+        }
+
+        function updateGalleryDisplay() {
+            const mainImg = document.getElementById('mainGalleryImage');
+            mainImg.src = currentGalleryImages[currentImageIndex];
+
+            document.getElementById('galleryCounter').textContent = `${currentImageIndex + 1} / ${currentGalleryImages.length}`;
+
+            const thumbsContainer = document.getElementById('galleryThumbnails');
+            thumbsContainer.innerHTML = currentGalleryImages.map((img, i) => `
+                <button onclick="selectGalleryImage(${i})" class="w-16 h-12 rounded-lg border-2 overflow-hidden flex-shrink-0 transition-all ${i === currentImageIndex ? 'border-brandRed scale-105' : 'border-brandBorder opacity-60 hover:opacity-100'}">
+                    <img src="${img}" class="w-full h-full object-cover">
+                </button>
+            `).join('');
+        }
+
+        function selectGalleryImage(index) {
+            currentImageIndex = index;
+            updateGalleryDisplay();
+        }
+
+        function prevGalleryImage() {
+            currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+            updateGalleryDisplay();
+        }
+
+        function nextGalleryImage() {
+            currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+            updateGalleryDisplay();
+        }
+
+        function closeMultiGallery() {
+            document.getElementById('multiGalleryModal').classList.add('hidden');
+        }
+
+        function openGraphicLightbox(src, title) {
+            document.getElementById('graphicLightboxImg').src = src;
+            document.getElementById('graphicLightboxTitle').textContent = title;
+            document.getElementById('graphicLightbox').classList.remove('hidden');
+        }
+
+        function closeGraphicLightbox() {
+            document.getElementById('graphicLightbox').classList.add('hidden');
+        }
+
+
+        function filterGraphics(cat) {
+            document.querySelectorAll('.graphics-filter-btn').forEach(btn => {
+                const active = btn.dataset.filter === cat;
+
+                btn.className = active
+                    ? 'graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-bold bg-brandRed text-white transition-all shadow-sm'
+                    : 'graphics-filter-btn px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white border border-brandBorder text-brandDark hover:border-brandRed transition-all';
+            });
+
+            document.querySelectorAll('.graphic-item').forEach(item => {
+                const category = item.dataset.category.trim().toLowerCase();
+                const selected = cat.trim().toLowerCase();
+
+                item.style.display =
+                    selected === 'all' || category === selected
+                        ? ''
+                        : 'none';
+            });
+        }
+
+        function selectService(name) {
+            const select = document.getElementById('serviceRequired');
+            if (select) select.value = name;
+        }
+
+        function handleWhatsAppInquiry(e) {
+            e.preventDefault();
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('emailAddress').value.trim();
+            const contactNumber = document.getElementById('contactNumber').value.trim();
+            const serviceRequired = document.getElementById('serviceRequired').value;
+            const message = document.getElementById('projectMessage').value.trim();
+            const alertBox = document.getElementById('formAlert');
+
+            if (!fullName || !email || !contactNumber || !serviceRequired || !message) {
+                alertBox.className = "p-4 rounded-lg text-sm font-bold bg-red-100 text-brandRed border border-brandRed/20";
+                alertBox.textContent = "Please complete all required fields.";
+                alertBox.classList.remove('hidden');
+                return;
+            }
+
+            const text = `Hello Azan Javed!\nI have a project inquiry from AJ Digital Studio:\n\nName: ${fullName}\nEmail: ${email}\nContact Number: ${contactNumber}\nService: ${serviceRequired}\nProject Details:\n${message}\n\nPlease get back to me!`;
+
+            const url = `https://wa.me/923701429102?text=${encodeURIComponent(text)}`;
+
+            alertBox.className = "p-4 rounded-lg text-sm font-bold bg-emerald-50 text-emerald-700 border border-emerald-200";
+            alertBox.textContent = "Opening WhatsApp to send your inquiry...";
+            alertBox.classList.remove('hidden');
+
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 600);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (MY_PORTRAIT_URL) applyPersonalPhoto(MY_PORTRAIT_URL);
+            renderWebProjects();
+            renderAppProjects();
+            renderGraphicsGrid();
+        });
+    </script>
+</body>
+
+</html>
